@@ -52,7 +52,6 @@ This is an outline of the London tech team's working methodologies, rather than 
 * __Reviewing your teammates' code needs to be an equal priotity to writing new code__. Momentum is lost when changes await review too long. Kick up a fuss if anyone is blocking the feature from being completed.
 * __Deployment via CI rather than direct deployment__. CircleCI will always deploy `master -> master` and `staging -> staging` if the tests pass. 
 * __Anything can go into staging__. Changes should be pushed one-way from your feature branch. e.g. `git push --force origin feature-branch:staging`. Never run a staging branch locally.
-* 
 
 ####Code reviews (borrowed from [Thoughtbot's guidelines](http://playbook.thoughtbot.com/#code-reviews))
 0. Create a local feature branch based off master.
@@ -61,10 +60,10 @@ This is an outline of the London tech team's working methodologies, rather than 
 0. Write a good commit message.
 0. Share your branch.
 0. Submit a GitHub pull request.
-0. Ask for a code review in Campfire.
+0. Ask for a code review on the request or in Flowdock.
 0. A team member other than the author reviews the pull request. They follow Code Review guidelines to avoid miscommunication.
-0. They make comments and ask questions directly on lines of code in the GitHub web interface or in Campfire.
-When satisfied, they comment on the pull request "Ready to merge."
+0. They make comments and ask questions directly on lines of code in GitHub.
+0. When satisfied, they comment on the pull request with the `:shipit:` (:shipit:) emoji.
 0. Rebase interactively. Squash commits like "Fix whitespace" into one or a small number of valuable commit(s). Edit commit messages to reveal intent.
 0. View a list of new commits. View changed files. Merge branch into master.
 0. Delete your remote feature branch.

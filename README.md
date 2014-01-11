@@ -3,7 +3,7 @@ Easyart developer handbook (draft)
 
 ####General principles:
 * __Clarity over cleverness__. Your code is only good if someone else undertands it.
-* __Never make changes unilaterally__. Great benefit comes from oversharing and overcommunication. Accept the benefit of your teammates' feedback comes at the expense of some chatter/noise. [Increase bus factor](http://en.wikipedia.org/wiki/Bus_factor).
+* __Never make changes unilaterally__. Prefer oversharing and overcommunication (at the expense of some chatter/noise) to implicit understanding and agreement. Goal is to [increase bus factor](http://en.wikipedia.org/wiki/Bus_factor).
 
 ###Language style guides
   
@@ -31,7 +31,7 @@ Easyart developer handbook (draft)
 * __Ruthlessly remove tasks__ that are unclear, or low priority. Care should be taken to inform everyone it's being removed and why. If they are important they will come back.
 * __Indicate callbacks__. Tasks that are done but need to be reported back on (or need to be reverted in the case of a time-sensitive content change) should have a due date and `:watch:` appended. Example: **Lazy load related images :watch: (Jan 1)** would indicate the success of the task will be reported back into the ticket on January 1st.
 * __Tasks must be assigned__. Tasks that are not assigned are extremely unlikely to be actioned.
-* __Always append notes__. We will always have distractions, forget what we agreed etc. Where possible, use Basecamp for meeting notes
+* __Always append notes__. Use Basecamp for meeting notes and documenting agreed sub-actions, no matter how trivial. We will always have distractions, forget what we agreed etc, so these notes are invaluable.
 * __Always prefer pasted text to attached files__. Google Docs are also preferable to attachments. Opening files is annoying.
 
 ####Git

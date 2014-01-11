@@ -46,10 +46,14 @@ Easyart developer handbook/manifesto (draft)
 * __Deployment via CI__. CircleCI will always deploy `master -> master` and `staging -> staging` if the tests pass. Never deploy directy.
 * __Anything can go into staging__. Changes should be pushed one-way from your feature branch. e.g. `git push --force origin feature-branch:staging`. Never run a staging branch locally.
 
+####Design and UX
+* Sketching
+* Split testing
+
 ####Monitoring and alerting
 * Pingdom
 * New Relic
 * Logentries
 
-####Things we agree with
-* http://12factor.net/
+####References
+* [The Twelve-Factor app](http://12factor.net/)

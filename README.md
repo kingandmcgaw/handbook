@@ -9,7 +9,7 @@ Easyart developer handbook (draft)
   
 ####Javascript
 * [Airbnb's style guide](https://github.com/airbnb/javascript) as a starting point. Perhaps with some exceptions:
-  * Prefer ``function test () {`` to ``function test() {``
+  * Prefer ``function test () {`` to ``function test() {``. Because, Crockford.
   * Prefer double quotes for strings
   * Note: what documentation style?
   
@@ -34,11 +34,10 @@ Easyart developer handbook (draft)
 * __Always append notes__. We will always have distractions, forget what we agreed etc. Where possible, use Basecamp for meeting notes
 * __Always prefer pasted text to attached files__. Google Docs are also preferable to attachments. Opening files is annoying.
 
-####Development workflow
-* __Simple git branching__. Master, and your feature branches.
-* __Always open a pull request__ for any functional changes (or anything significant). This is for knowledge sharing. For minor changes
-* __Never merge your own pull request__. This means you are in 
-* __Master is always deployable__. No exceptions.
+####Git
+* __Simple git branching__. Master, and your feature branches. Master is always deployable. No exceptions.
+* __Always open a pull request__ for any functional changes (or anything significant). This is for knowledge sharing. For minor changes and FYIs, [add comments to the lines in Github](https://help.github.com/articles/adding-commit-comments).
+* __Never merge your own pull request__. This means you are in charge of chasing someone to give their stamp of approval with a :shipit: message.
 * __Deployment via CI__. CircleCI will always deploy ``master -> master`` and ``staging -> staging`` if the tests pass. Never deploy directy.
 * __Anything can go into staging__. Changes should be pushed one-way from your feature branch. e.g. ``git push --force origin feature-branch:staging``. Never run a staging branch locally.
 

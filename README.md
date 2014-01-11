@@ -4,6 +4,7 @@ Easyart developer handbook (draft)
 ####General principles:
 * __Clarity over cleverness__. Your code is only good if someone else undertands it.
 * __Never make changes unilaterally__. Prefer oversharing and overcommunication (at the expense of some chatter/noise) to implicit understanding and agreement. Goal is to [increase bus factor](http://en.wikipedia.org/wiki/Bus_factor).
+* __Asynchronous and location-agnostic__. With a workforce across multiple locations it's important that we behave as if we're _all_ remote. Always acknowledge communication.
 
 ###Language style guides
   
@@ -32,7 +33,7 @@ Easyart developer handbook (draft)
 * __Indicate callbacks__. Tasks that are done but need to be reported back on (or need to be reverted in the case of a time-sensitive content change) should have a due date and `:watch:` appended. Example: _Lazy load related images :watch: (Jan 1)_ might indicate the success of the task will be reported back into the ticket on January 1st.
 * __Indicate blockers with question mark icon__. If someone or something is blocking the task from being completed, indicate it with the `:question:` icon. Example: _Decide on lead image for categories page :question:_ might the assignee is waiting for a third party before the image can be chosen.
 * __Tasks must be assigned__. Tasks that are not assigned are extremely unlikely to be actioned.
-* __Always append notes__. Use Basecamp for meeting notes and documenting agreed sub-actions, no matter how trivial. We will always have distractions, forget what we agreed etc, so these notes are invaluable.
+* __Always add notes to tasks when decisions are made verbally__. Use Basecamp for meeting notes and documenting agreed sub-actions, no matter how trivial. We will always have distractions, forget what we agreed etc, so these notes are invaluable. Also, some of us will be working remotely, and will need to be kept in the loop. Prefer Basecamp to verbal communication where appropriate.
 * __Always prefer pasted text to attached files__. Google Docs are also preferable to attachments. Opening files is annoying.
 
 ####Git

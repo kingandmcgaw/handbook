@@ -1,4 +1,4 @@
-Easyart developer handbook (draft)
+Easyart developer handbook/manifesto (draft)
 ===========
 
 ####General principles:

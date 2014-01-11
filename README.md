@@ -1,7 +1,7 @@
 Easyart developer handbook/manifesto (draft)
 ===========
 
-This is an outline of the London tech team's working methodologies, rather than a company-wide policy.
+This is an outline of the London tech team's working methodologies, rather than a company-wide policy. It's intended to be a living document, so please make changes via pull request.
 
 ####General principles:
 * __Clarity over cleverness__. Your code is only good if someone else undertands it.

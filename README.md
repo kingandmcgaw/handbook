@@ -1,11 +1,11 @@
 Easyart developer handbook (draft)
 ===========
 
-###Language style guides
-
 ####General principles:
 * Clarity over cleverness. Your code is only good if someone else undertands it.
-* Never work in isolation. Great benefit comes from oversharing and overcommunication. Accept the benefit of your teammates' feedback comes at the expense of some chatter/noise. [Increase bus factor](http://en.wikipedia.org/wiki/Bus_factor)
+* Never work in isolation. Great benefit comes from oversharing and overcommunication. Accept the benefit of your teammates' feedback comes at the expense of some chatter/noise. [Increase bus factor](http://en.wikipedia.org/wiki/Bus_factor).
+
+###Language style guides
   
 ####Javascript
 * [Airbnb's style guide](https://github.com/airbnb/javascript) as a starting point. Perhaps with some exceptions:

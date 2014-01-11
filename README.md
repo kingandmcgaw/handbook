@@ -34,11 +34,11 @@ Styleguides
 * __Always prefer pasted text to attached files__. Google Docs are also preferable to attachments. Opening files is annoying.
 
 ####Development workflow
-* Simple git branching. Master, and your feature branches.
-* Master always deployable. No exceptions.
+* __Simple git branching__. Master, and your feature branches.
+* __Always open a pull request__ for any functional changes (or anything significant)
+* __Master is always deployable__. No exceptions.
 * CircleCI will always deploy ``master -> master`` and ``staging -> staging``. Never deploy directly to Heroku on production branches.
-* Staging is a bucket (you can force any change into it)
-* Pull requests for any functional changes (or anything significant)
+* Staging is a bucket (you can ``--force`` any change into it). Changes should be pushed one-way from your feature branch. e.g. ``git push --force origin feature-branch:staging``
 
 ####Monitoring and alerting
 * Pingdom

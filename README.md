@@ -5,6 +5,8 @@ Easyart developer handbook (draft)
 * __Clarity over cleverness__. Your code is only good if someone else undertands it.
 * __Never make changes unilaterally__. Prefer oversharing and overcommunication (at the expense of some chatter/noise) to implicit understanding and agreement. Goal is to [increase bus factor](http://en.wikipedia.org/wiki/Bus_factor).
 * __Asynchronous and location-agnostic__. With a workforce across multiple locations it's important that we behave as if we're _all_ remote. Always acknowledge communication.
+* __Clearly define the rules of success for every project or proposal__.
+* __Transparency by default__. All information should be as public as possible, either inside the information, and where possible outside the organisation.
 
 ###Language style guides
   
@@ -27,7 +29,7 @@ Easyart developer handbook (draft)
 
 ####Basecamp
 * __Your _me_ page is your list of _accepted_ tasks__ that can be achieved within a 30 day period. It is your responsibility to make sure these tasks are completed and should be checked daily.
-* __Tasks must be clear and actionable__ if they are going to stand any chance of getting completed. If a task is assigned to you that is unclear, send it back to the assigner for clarification. If it's too big, request that it be split up. Don't be shy about challenging. Goals and tasks should not be mixed.
+* __Tasks must be clear and actionable__ if they are going to stand any chance of getting completed. If a task is assigned to you that is unclear, send it back to the assigner for clarification. If it's too big, request that it be split up. Don't be shy about challenging. Goals and tasks should not be mixed. Be ruthless about destroying confusion. Confusion is the enemy of productivity.
 * __Each project should have a backog__. These are tasks that need doing, but are unlikely to get done in the next 30 days. The project owners should regularly prioritise the backlog.
 * __Ruthlessly remove tasks__ that are unclear, or low priority. Care should be taken to inform everyone it's being removed and why. If they are important they will come back.
 * __Indicate callbacks__. Tasks that are done but need to be reported back on (or need to be reverted in the case of a time-sensitive content change) should have a due date and `:watch:` appended. Example: _Lazy load related images :watch: (Jan 1)_ might indicate the success of the task will be reported back into the ticket on January 1st.

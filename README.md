@@ -1,10 +1,11 @@
-Styleguides
+Easyart developer handbook (draft)
 ===========
 
 ###Language style guides
 
 ####General principles:
-  * Clarity over cleverness
+* Clarity over cleverness. Your code is only good if someone else undertands it.
+* Never work in isolation. Great benefit comes from oversharing and overcommunication. Accept the benefit of your teammates' feedback comes at the expense of some chatter/noise. [Increase bus factor](http://en.wikipedia.org/wiki/Bus_factor)
   
 ####Javascript
 * [Airbnb's style guide](https://github.com/airbnb/javascript) as a starting point. Perhaps with some exceptions:
@@ -35,7 +36,8 @@ Styleguides
 
 ####Development workflow
 * __Simple git branching__. Master, and your feature branches.
-* __Always open a pull request__ for any functional changes (or anything significant)
+* __Always open a pull request__ for any functional changes (or anything significant). This is for knowledge sharing. For minor changes
+* __Never merge your own pull request__. This means you are in 
 * __Master is always deployable__. No exceptions.
 * CircleCI will always deploy ``master -> master`` and ``staging -> staging``. Never deploy directly to Heroku on production branches.
 * Staging is a bucket (you can ``--force`` any change into it). Changes should be pushed one-way from your feature branch. e.g. ``git push --force origin feature-branch:staging``

@@ -36,7 +36,7 @@ Easyart developer handbook (draft)
 
 ####Git
 * __Simple git branching__. Master, and your feature branches. Master is always deployable. No exceptions.
-* __Always open a pull request__ for any functional changes (or anything significant). This is for knowledge sharing. For minor changes and FYIs, [add comments to the lines in Github](https://help.github.com/articles/adding-commit-comments).
+* __Always open a pull request__ for any functional changes (or anything significant). This is for knowledge sharing. For minor changes and FYIs, [add comments to the lines in Github](https://help.github.com/articles/adding-commit-comments). Comments in the pull request are preferable to Basecamp if the change is in code.
 * __Never merge your own pull request__. This means you are in charge of chasing someone to give their stamp of approval with a :shipit: message. 
 * __Reviewing your teammates' code needs to be an equal priotity to writing new code__. Momentum is lost when changes await review too long.
 * __Deployment via CI__. CircleCI will always deploy `master -> master` and `staging -> staging` if the tests pass. Never deploy directy.

@@ -4,7 +4,7 @@ Easyart developer handbook/manifesto (draft)
 ####General principles:
 * __Clarity over cleverness__. Your code is only good if someone else undertands it.
 * __Never make changes unilaterally__. Prefer oversharing and overcommunication (at the expense of some chatter/noise) to implicit understanding and agreement. Goal is to [increase bus factor](http://en.wikipedia.org/wiki/Bus_factor).
-* __Asynchronous and location-agnostic__. With a workforce across multiple locations it's important that we behave as if we're _all_ remote. Always acknowledge communication.
+* __Be asynchronous and location-agnostic__. With a workforce across multiple locations it's important that we behave as if we're _all_ remote. Always acknowledge communication.
 * __Clearly define the rules of success for every project or proposal__.
 * __Transparency by default__. All information should be as public as possible, either inside the information, and where possible outside the organisation.
 
@@ -40,7 +40,7 @@ Easyart developer handbook/manifesto (draft)
 
 ####Git
 * __Simple git branching__. Master, and your feature branches. Master is always deployable. No exceptions.
-* __Always open a pull request__ for any functional changes (or anything significant). This is for knowledge sharing. For minor changes and FYIs, [add comments to the lines in Github](https://help.github.com/articles/adding-commit-comments). Comments in the pull request are preferable to Basecamp if the change is in code.
+* __Always open a pull request__ for any functional changes (or anything significant). This is for knowledge sharing and sanity checking rather than "approval". Do so as early as possible. For minor changes and FYIs, [add comments to the lines in Github](https://help.github.com/articles/adding-commit-comments). Comments in the pull request are preferable to Basecamp if the change is in code.
 * __Never merge your own pull request__. This means you are in charge of chasing someone to give their stamp of approval with a :shipit: message. 
 * __Reviewing your teammates' code needs to be an equal priotity to writing new code__. Momentum is lost when changes await review too long.
 * __Deployment via CI__. CircleCI will always deploy `master -> master` and `staging -> staging` if the tests pass. Never deploy directy.

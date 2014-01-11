@@ -75,12 +75,17 @@ When satisfied, they comment on the pull request "Ready to merge."
 ####Design and UX
 * Sketching
 * Split testing
+* Optimizely
 
 ####Monitoring and alerting
 * Pingdom
 * New Relic
 * Logentries
 * Cloudflare (TBC)
+* Airbrake
+
+####Payment processing
+* Datacash
 
 ####References
 * [The Twelve-Factor app](http://12factor.net/)

@@ -6,7 +6,7 @@ Easyart developer handbook/manifesto (draft)
 * __Never make changes unilaterally__. Prefer oversharing and overcommunication (at the expense of some chatter/noise) to implicit understanding and agreement. Goal is to [increase bus factor](http://en.wikipedia.org/wiki/Bus_factor).
 * __Be asynchronous and location-agnostic__. With a workforce across multiple locations it's important that we behave as if we're _all_ remote. Always acknowledge communication.
 * __Clearly define success metrics__. Test ideas and hypotheses early and often against the metrics you've agreed on. Your job is not programming, [it's delivering value using programming](http://blog.bahadir.io/posts/failed-entrepreneur.html).
-* __Transparency by default__. All information should be as public as possible, either inside the information, and where possible outside the organisation.
+* __Transparency by default__. All information should be as public as possible, if possible outside the organisation. Use blog posts, Twitter, Basecamp, meetings or whatever is most suitable to disseminate information.
 * __With the exception of standups, meetings are optional when possible__
 * Project naming conventions. Directors!
 

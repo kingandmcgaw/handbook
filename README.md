@@ -17,16 +17,16 @@ This is an outline of Easyart's London tech team's working methodologies, rather
 ###Language style guides
   
 ####Javascript
-* [Airbnb's style guide](https://github.com/airbnb/javascript) as a starting point. Perhaps with some exceptions:
-  * Prefer `function test () {` to `function test() {`. Because, Crockford.
-  * Prefer double quotes for strings
-  * Note: what documentation style?
-  * Note: or is are we using [Google's styleguide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)?
+[Airbnb's style guide](https://github.com/airbnb/javascript) as a starting point. Perhaps with some exceptions:
+* Prefer `function test () {` to `function test() {`. [Because, Crockford](http://www.jslint.com/).
+* Prefer double quotes for strings
+* Note: what documentation style?
+* Note: or is are we using [Google's styleguide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)?
   
 ####Ruby
-* [Github's style guide](https://github.com/styleguide/ruby) as a starting point, with some exceptions:
-  * Not strict on `Keep lines fewer than 80 characters`. Just use common sense.
-  * Note: what documentation style?
+[Github's style guide](https://github.com/styleguide/ruby) as a starting point, with some exceptions:
+* Not strict on `Keep lines fewer than 80 characters`. Just use common sense.
+* Note: what documentation style?
   
 ####CSS
 * Sass style guide

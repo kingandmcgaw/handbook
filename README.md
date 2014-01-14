@@ -48,6 +48,7 @@ This is an outline of Easyart's London tech team's working methodologies, rather
 
 ####Git
 * __Simple git branching__. Master, and your feature branches. Master is always deployable. No exceptions.
+* __Branch naming__. Prefix all branches with your initials. eg. *'JP-my-feature-branch'*
 * __Pull requests for QA__. This is for knowledge sharing and sanity checking rather than "approval". Do so as early as possible. For minor changes and FYIs, [add comments to the lines in Github](https://help.github.com/articles/adding-commit-comments). Comments in the pull request are preferable to Basecamp if the change is in code. Never merge your own pull request. This means you are in charge of chasing someone to give their stamp of approval with a :shipit: message. 
 * __Reviewing your teammates' code needs to be an equal priotity to writing new code__. Momentum is lost when changes await review too long. Kick up a fuss if anyone is blocking your feature from being completed.
 * __Deployment via CI rather than direct deployment__. CircleCI will always deploy `master -> master` and `staging -> staging` if the tests pass. 

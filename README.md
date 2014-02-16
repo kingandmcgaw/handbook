@@ -1,7 +1,7 @@
 Easyart developer handbook/manifesto (draft)
 ===========
 
-This is an outline of Easyart's London tech team's working methodologies, rather than a company-wide policy. It's intended to be a living document, so please make changes via pull request.
+This is a draft of Easyart's web team's working methodologies, rather than a company-wide policy. It's intended to be a living document, so please make changes via pull request.
 
 ####General principles
 * __Clarity over cleverness__. Your code is only good if someone else undertands it.
@@ -57,11 +57,11 @@ This is an outline of Easyart's London tech team's working methodologies, rather
 ####Code reviews (borrowed from [Thoughtbot's guidelines](http://playbook.thoughtbot.com/#code-reviews))
 0. Create a local feature branch based off master.
 0. Submit a GitHub pull request.
-0. Ask for a code review on the request or in Flowdock. Assign the task to them and prepend the task name with `:eyes:` (:eyes:)
+0. Ask for a code review on the request or in Flowdock. Assign the task to them and prepend the task name with `:eyes:` (:eyes:), or move to the QA list
 0. A team member other than the author reviews the pull request. They follow Code Review guidelines to avoid miscommunication.
 0. They make comments and ask questions directly on lines of code in GitHub.
 0. When satisfied, they comment on the pull request with the `:shipit:` (:shipit:) emoji, or merge the pull request directly and delete the remote branch
-0. Delete your local feature branch.
+0. Delete your local feature branch once the feature is merged
 
 ####Design and UX
 * Use personas to guide decisions
@@ -71,15 +71,15 @@ This is an outline of Easyart's London tech team's working methodologies, rather
 * Usertesting.com for user testing, and Optimizely for split testing
 
 ####Monitoring and alerting
-* Pingdom
-* New Relic
-* Logentries
-* Cloudflare (TBC)
-* Airbrake
+* [New Relic](http://www.newrelic.com) for application monitoring and alerting (and powering our dashboards)
+* [Logentries](www.logentries.com) for logging and some alerting
+* [Airbrake](http://www.airbrake.com) for error monitoring
+* [Pingdom](http://www.pingdom.com) for uptime monitoring
 
 ####Payment processing
-* Datacash
+* [Datacash](http://www.datacash.com)
 
 ####References
 * [The Twelve-Factor app](http://12factor.net/)
 * [Thoughtbot Playbook](http://playbook.thoughtbot.com/)
+* [Lean UX](http://www.amazon.co.uk/Lean-UX-Applying-Principles-Experience/dp/1449311652)

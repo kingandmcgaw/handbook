@@ -26,7 +26,7 @@ This is a draft of Easyart's web team's working methodologies, rather than a com
 * __Name your tasks sensibly__. Ideally prepend the task with the site (if appropriate) and page. e.g. `WG: Product page: change lead time copy`
  
 ####User experience and visual design
-* Agree on outcomes rather than features
+* Agree on outcomes *before* deciding on features
 * Use personas to guide decisions
 * Shared understanding and hypotheses over design heroes
 * Use the [styleguide](http://www.easyart.com/docs/styleguide) to build pages from modules

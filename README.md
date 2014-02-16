@@ -13,6 +13,26 @@ This is a draft of Easyart's web team's working methodologies, rather than a com
 * __Project naming conventions__. Directors!
 * __Agile methodologies, not tools__. Backlogs, standups, QA etc.
 * __Continuous delivery backed up by tests__. TDD, of course.
+* 
+
+####Basecamp
+* __Your _me_ page is your list of _accepted_ tasks__ that can be achieved within a 30 day period. It is your responsibility to make sure these tasks are completed and should be checked daily.
+* __Tasks must be clear and actionable__ if they are going to stand any chance of getting completed. If a task is assigned to you that is unclear, send it back to the assigner for clarification. If it's too big, request that it be split up. Don't be shy about challenging. Goals and tasks should not be mixed. Be ruthless about destroying confusion. Confusion is the enemy of productivity.
+* __Each project should have a backog__. These are tasks that need doing, but are unlikely to get done in the next 30 days. By default, new ideas should go into the backlog for prioritisation by project owners.
+* __Ruthlessly remove tasks__ that are unclear, or low priority. Care should be taken to inform everyone it's being removed and why. If they are important they will come back.
+* __Indicate callbacks__. Tasks that are done but need to be reported back on (or need to be reverted in the case of a time-sensitive content change) should have a due date and `:watch:` appended. Example: _Lazy load related images :watch: (Jan 1)_ might indicate the success of the task will be reported back into the ticket on January 1st.
+* __Indicate blockers with question mark icon__. If someone or something is blocking the task from being completed, indicate it with the `:question:` icon. Example: _Decide on lead image for categories page :question:_ might the assignee is waiting for a third party before the image can be chosen.
+* __Tasks must be assigned__. Tasks that are not assigned are extremely unlikely to be actioned.
+* __Always add notes to tasks when decisions are made verbally__. Use Basecamp for meeting notes and documenting agreed sub-actions, no matter how trivial. We will always have distractions, forget what we agreed etc, so these notes are invaluable. Also, some of us will be working remotely, and will need to be kept in the loop. Prefer Basecamp to verbal communication where appropriate. *When things are only said on the phone, in person, in emails that don't include the whole group, or in one-on-one chats, information gets lost, forgotten, or misinterpreted. The problems expand when someone joins or leaves the project.*
+* __Always prefer pasted text to attached files__. Google Docs are also preferable to attachments. Opening files is annoying.
+* __Name your tasks sensibly__. Ideally prepend the task with the site (if appropriate) and page. e.g. `WG: Product page: change lead time copy`
+ 
+####User experience
+* Agree on outcomes before features
+* Use personas to guide decisions
+* Shared understanding and hypotheses over heroes
+* Start with the lowest fidelity way of describing an idea, and validate as early as possible
+* Usertesting.com for user testing, and Optimizely for split testing
 
 ###Language style guides
   
@@ -34,18 +54,6 @@ This is a draft of Easyart's web team's working methodologies, rather than a com
 
 ###Task workflow
 
-####Basecamp
-* __Your _me_ page is your list of _accepted_ tasks__ that can be achieved within a 30 day period. It is your responsibility to make sure these tasks are completed and should be checked daily.
-* __Tasks must be clear and actionable__ if they are going to stand any chance of getting completed. If a task is assigned to you that is unclear, send it back to the assigner for clarification. If it's too big, request that it be split up. Don't be shy about challenging. Goals and tasks should not be mixed. Be ruthless about destroying confusion. Confusion is the enemy of productivity.
-* __Each project should have a backog__. These are tasks that need doing, but are unlikely to get done in the next 30 days. By default, new ideas should go into the backlog for prioritisation by project owners.
-* __Ruthlessly remove tasks__ that are unclear, or low priority. Care should be taken to inform everyone it's being removed and why. If they are important they will come back.
-* __Indicate callbacks__. Tasks that are done but need to be reported back on (or need to be reverted in the case of a time-sensitive content change) should have a due date and `:watch:` appended. Example: _Lazy load related images :watch: (Jan 1)_ might indicate the success of the task will be reported back into the ticket on January 1st.
-* __Indicate blockers with question mark icon__. If someone or something is blocking the task from being completed, indicate it with the `:question:` icon. Example: _Decide on lead image for categories page :question:_ might the assignee is waiting for a third party before the image can be chosen.
-* __Tasks must be assigned__. Tasks that are not assigned are extremely unlikely to be actioned.
-* __Always add notes to tasks when decisions are made verbally__. Use Basecamp for meeting notes and documenting agreed sub-actions, no matter how trivial. We will always have distractions, forget what we agreed etc, so these notes are invaluable. Also, some of us will be working remotely, and will need to be kept in the loop. Prefer Basecamp to verbal communication where appropriate. *When things are only said on the phone, in person, in emails that don't include the whole group, or in one-on-one chats, information gets lost, forgotten, or misinterpreted. The problems expand when someone joins or leaves the project.*
-* __Always prefer pasted text to attached files__. Google Docs are also preferable to attachments. Opening files is annoying.
-* __Name your tasks sensibly__. Ideally prepend the task with the site (if appropriate) and page. e.g. `WG: Product page: change lead time copy`
-
 ####Git
 * __Simple git branching__. Master, and your feature branches. Master is always deployable. No exceptions.
 * __Branch naming__. Prefix all branches with your initials. eg. *'JP-my-feature-branch'*
@@ -62,13 +70,6 @@ This is a draft of Easyart's web team's working methodologies, rather than a com
 0. They make comments and ask questions directly on lines of code in GitHub.
 0. When satisfied, they comment on the pull request with the `:shipit:` (:shipit:) emoji, or merge the pull request directly and delete the remote branch
 0. Delete your local feature branch once the feature is merged
-
-####Design and UX
-* Use personas to guide decisions
-* Agree on outcomes not features
-* Shared understanding and hypotheses over heroes
-* Start with the lowest fidelity way of describing an idea
-* Usertesting.com for user testing, and Optimizely for split testing
 
 ####Monitoring and alerting
 * [New Relic](http://www.newrelic.com) for application monitoring and alerting (and powering our dashboards)

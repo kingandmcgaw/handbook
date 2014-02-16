@@ -76,9 +76,6 @@ This is a draft of Easyart's web team's working methodologies, rather than a com
 * [Airbrake](http://www.airbrake.com) for error monitoring
 * [Pingdom](http://www.pingdom.com) for uptime monitoring
 
-####Payment processing
-* [Datacash](http://www.datacash.com)
-
 ####References
 * [The Twelve-Factor app](http://12factor.net/)
 * [Thoughtbot Playbook](http://playbook.thoughtbot.com/)

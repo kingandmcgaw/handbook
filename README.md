@@ -25,10 +25,11 @@ This is a draft of Easyart's web team's working methodologies, rather than a com
 * __Always prefer pasted text to attached files__. Google Docs are also preferable to attachments. Opening files is annoying.
 * __Name your tasks sensibly__. Ideally prepend the task with the site (if appropriate) and page. e.g. `WG: Product page: change lead time copy`
  
-####User experience
-* Agree on outcomes before features
+####User experience and visual design
+* Agree on outcomes rather than features
 * Use personas to guide decisions
-* Shared understanding and hypotheses over heroes
+* Shared understanding and hypotheses over design heroes
+* Use the [styleguide](http://www.easyart.com/docs/styleguide) to build pages from modules
 * Start with the lowest fidelity way of describing an idea, and validate as early as possible
 * Usertesting.com for user testing, and Optimizely for split testing
 

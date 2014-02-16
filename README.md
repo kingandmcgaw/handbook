@@ -32,6 +32,7 @@ This is a draft of Easyart's web team's working methodologies, rather than a com
 * Use the [styleguide](http://www.easyart.com/docs/styleguide) to build pages from modules
 * Start with the lowest fidelity way of describing an idea, and validate as early as possible
 * Usertesting.com for user testing, and Optimizely for split testing
+
 Covered in more detail in [this post](http://easyart.github.io/2014/02/16/lean-ux-at-easyart/).
 
 ###Language style guides

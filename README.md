@@ -82,4 +82,5 @@ This is a draft of Easyart's web team's working methodologies, rather than a com
 ####References
 * [The Twelve-Factor app](http://12factor.net/)
 * [Thoughtbot Playbook](http://playbook.thoughtbot.com/)
+* [North](https://github.com/Snugug/north)
 * [Lean UX](http://www.amazon.co.uk/Lean-UX-Applying-Principles-Experience/dp/1449311652)

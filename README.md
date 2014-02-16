@@ -64,9 +64,11 @@ This is an outline of Easyart's London tech team's working methodologies, rather
 0. Delete your local feature branch.
 
 ####Design and UX
-* Sketching
-* Split testing
-* Optimizely
+* Use personas to guide decisions
+* Agree on outcomes not features
+* Shared understanding and hypotheses over heroes
+* Start with the lowest fidelity way of describing an idea
+* Usertesting.com for user testing, and Optimizely for split testing
 
 ####Monitoring and alerting
 * Pingdom

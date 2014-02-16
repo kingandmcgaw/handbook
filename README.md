@@ -1,4 +1,4 @@
-Easyart developer handbook/manifesto (draft)
+Easyart developer handbook
 ===========
 
 This is a draft of Easyart's web team's working methodologies, rather than a company-wide policy. It's intended to be a living document, so please make changes via pull request.

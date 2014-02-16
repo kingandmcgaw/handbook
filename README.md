@@ -13,7 +13,6 @@ This is a draft of Easyart's web team's working methodologies, rather than a com
 * __Project naming conventions__. Directors!
 * __Agile methodologies, not tools__. Backlogs, standups, QA etc.
 * __Continuous delivery backed up by tests__. TDD, of course.
-* 
 
 ####Basecamp
 * __Your _me_ page is your list of _accepted_ tasks__ that can be achieved within a 30 day period. It is your responsibility to make sure these tasks are completed and should be checked daily.

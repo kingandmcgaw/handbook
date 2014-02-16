@@ -10,8 +10,7 @@ This is a draft of Easyart's web team's working methodologies, rather than a com
 * __Focus on value__. Ideas and requests are just unproven hypotheses. Test early and often against success criteria. Our job is not programming, [it's delivering value using programming](http://blog.bahadir.io/posts/failed-entrepreneur.html), so we must always ensure we're delivering value.
 * __Transparency by default__. All information should be as public as possible. Use blog posts, Twitter, Basecamp, meetings or whatever is most suitable to disseminate information.
 * __With the exception of team standups, meetings are optional when possible__. But if you attend you must participate.
-* __Project naming conventions__. Directors!
-* __Agile methodologies, not tools__. Backlogs, standups, QA etc.
+* __Agile methodologies, not tools__. Backlogs, standups, QA etc. Related: [Easyart-flavoured agile](http://easyart.github.io/2013/04/16/easyart-flavoured-agile/)
 * __Continuous delivery backed up by tests__. TDD, of course.
 
 ####Basecamp

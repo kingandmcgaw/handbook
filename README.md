@@ -77,11 +77,24 @@ Covered in more detail in [this post](http://easyart.github.io/2014/02/16/lean-u
 0. When satisfied, they comment on the pull request with the `:shipit:` (:shipit:) emoji, or merge the pull request directly and delete the remote branch
 0. Delete your local feature branch once the feature is merged
 
-####Monitoring and alerting
+###Monitoring and alerting
+We use the following services:
+
 * [New Relic](http://www.newrelic.com) for application monitoring and alerting (and powering our dashboards)
 * [Logentries](www.logentries.com) for logging and some alerting
 * [Airbrake](http://www.airbrake.com) for error monitoring
 * [Pingdom](http://www.pingdom.com) for uptime monitoring
+
+####In the event of a problem
+
+Each team member will be alerted via the New Relic app when the **errors are > 5%** or the **apdex is < 0.5**, then:
+* Log into Flowdock
+* Communicate what you're investigating before you do it
+* Things to check:
+  * Status pages
+  * Loading site in browser
+  * Logs in Logentries
+  * Airbrake
 
 ####References
 * [The Twelve-Factor app](http://12factor.net/)

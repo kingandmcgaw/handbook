@@ -88,13 +88,18 @@ We use the following services:
 ####In the event of a problem
 
 Each team member will be alerted via the New Relic app when the **errors are > 5%** or the **apdex is < 0.5**, then:
+
 * Log into Flowdock
 * Communicate what you're investigating before you do it
 * Things to check:
-  * Status pages
-  * Loading site in browser
-  * Logs in Logentries
-  * Airbrake
+    + Status pages
+        0. [Heroku](https://status.heroku.com/)
+        0. [Found](http://status.found.no/)
+        0. [Memcachier](http://status.memcachier.com)
+        0. [Circleci](http://status.circleci.com/)
+    + Loading site in browser
+    + Logs in Logentries
+    + Airbrake
 
 ####References
 * [The Twelve-Factor app](http://12factor.net/)

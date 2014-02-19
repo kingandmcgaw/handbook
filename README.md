@@ -53,6 +53,11 @@ Covered in more detail in [this post](http://easyart.github.io/2014/02/16/lean-u
 * Sass style guide
 * [Craven gem](https://github.com/easyart/craven)
 
+####File naming rules
+* **Always** lowercase
+* Public-facing files should use hyphens. This includes images.
+* Code files should use underscores.
+
 ###Task workflow
 
 ####Git

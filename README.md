@@ -1,7 +1,7 @@
 Easyart developer handbook
 ===========
 
-This is a draft of Easyart's web team's working methodologies, rather than a company-wide policy. It's intended to be a living document, so please make changes via pull request.
+This is a draft of Easyart's web team's working methodologies. It's intended to be a living document, so please make changes via pull request.
 
 ####General principles
 * __Clarity over cleverness__. Your code is only good if someone else undertands it.

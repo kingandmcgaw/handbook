@@ -90,7 +90,7 @@ We use the following services:
 Each team member will be alerted via the New Relic app when the **errors are > 5%** or the **apdex is < 0.5**, then:
 
 * Log into Flowdock
-* Communicate what you're investigating before you do it
+* Communicate what you're investigating before you do it ([READ-DO](http://lumbertribe.wordpress.com/2010/02/21/checklist-manifesto/))
 * Things to check:
     + Status pages
         0. [Heroku](https://status.heroku.com/)

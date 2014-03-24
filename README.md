@@ -74,7 +74,7 @@ Covered in more detail in [this post](http://easyart.github.io/2014/02/16/lean-u
 0. Ask for a code review on the request or in Flowdock. Assign the task to them and prepend the task name with `:eyes:` (:eyes:), or move to the QA list
 0. A team member other than the author reviews the pull request. They follow Code Review guidelines to avoid miscommunication.
 0. They make comments and ask questions directly on lines of code in GitHub.
-0. When satisfied, they comment on the pull request with the `:shipit:` (:shipit:) emoji, or merge the pull request directly and delete the remote branch
+0. When satisfied, they comment on the pull request with the `:shipit:` (:shipit:) emoji, or merge the pull request directly and delete the remote branch. **Don't merge to master after 3pm on a Friday unless you plan to monitor it.**
 0. Delete your local feature branch once the feature is merged
 
 ###Monitoring and alerting

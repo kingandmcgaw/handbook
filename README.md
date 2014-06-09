@@ -7,11 +7,11 @@ This is a draft of Easyart's web team's working methodologies. It's a living doc
 * __Clarity over cleverness__. Your code is only good if someone else undertands it.
 * __Collaboration over unilateral decisions__. Prefer oversharing and overcommunication (at the expense of some chatter/noise) to implicit understanding and agreement. Goal is to [increase bus factor](http://en.wikipedia.org/wiki/Bus_factor). Pair program when appropriate.
 * __Be asynchronous and location-agnostic__. [Everyone works remotely, even from an office](http://blog.mongohq.com/making-remote-work-work-an-adventure-in-time-and-space/). With a workforce across multiple locations it's important that we behave as if we're _all_ remote. Always acknowledge communication. Also helps scale the workforce.
-* __Focus on value__. Ideas and requests are just unproven hypotheses. Test early and often against success criteria. Our job is not programming, [it's delivering value using programming](http://blog.bahadir.io/posts/failed-entrepreneur.html), so we must always ensure we're delivering value.
+* __Focus on value over features__. Ideas and requests are just unproven hypotheses. Test early and often against success criteria. Our job is not programming, [it's delivering value using programming](http://blog.bahadir.io/posts/failed-entrepreneur.html), so we must always ensure we're delivering value.
 * __Transparency by default__. All information should be as public as possible. Use blog posts, Twitter, Basecamp, meetings or whatever is most suitable to disseminate information.
 * __With the exception of team standups, meetings are optional when possible__. But if you attend you must participate.
 * __Agile methodologies, not tools__. Backlogs, standups, QA etc. Related: [Easyart-flavoured agile](http://easyart.github.io/2013/04/16/easyart-flavoured-agile/)
-* __Continuous delivery backed up by tests__. TDD, of course.
+* __Continuous delivery over releases__. Backed up by tests, of course.
 
 ####Basecamp
 * __Your _me_ page is your list of _accepted_ tasks__ that can be achieved within a 30 day period. It is your responsibility to make sure these tasks are completed and should be checked daily.

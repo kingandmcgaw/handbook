@@ -59,13 +59,13 @@ Covered in more detail in [this post](http://easyart.github.io/2014/02/16/lean-u
 
 ###Task workflow
 
-####Git
+####Code
 * __Simple git branching__. Master, and your feature branches. Master is always deployable. No exceptions.
-* __Branch naming__. Prefix all branches with your initials. eg. *'JP-my-feature-branch'*
-* __Pull requests for QA__. This is for knowledge sharing and sanity checking as much as "approval". Do so as early as possible. For minor changes and FYIs, [add comments to the lines in Github](https://help.github.com/articles/adding-commit-comments). Comments in the pull request are preferable to Basecamp if the change is in code. Never merge your own pull request. This means you are in charge of chasing someone to give their stamp of approval with a :shipit: message. 
-* __Reviewing your teammates' code needs to be an equal priotity to writing new code__. Momentum is lost when changes await review too long. Kick up a fuss if anyone is blocking your feature from being completed. When satisfied, comment on the pull request with the `:shipit:` (:shipit:) emoji, or merge the pull request directly and delete the branch on remote and local. **Don't merge to master after 3pm on a Friday unless you plan to monitor it.**
-* __Deployment via CI rather than direct deployment__. CircleCI will always deploy `master -> master` and `staging -> staging` if the tests pass. 
-* __Anything can go into staging__. Changes should be pushed one-way from your feature branch. e.g. `git push --force origin feature-branch:staging`. Never run a staging branch locally.
+* __Branch naming__. Prefix all branches with your initials in lower case eg. *'jp-my-feature-branch'*
+* __Pull requests for QA__. This is for knowledge sharing and sanity checking as much as "approval". Do so as early as possible. For minor changes and FYIs, [add comments to the lines in Github](https://help.github.com/articles/adding-commit-comments). Comments in the pull request are preferable to Basecamp if the change is in code. 
+* __Reviewing your teammates' code needs to be an equal priotity to writing new code__. Momentum is lost when changes await review too long. You are in charge of chasing someone to give their stamp of approval (the `:shipit:` (:shipit:) emoji). Kick up a fuss if anyone is blocking your feature from being completed. **Don't merge to master after 3pm on a Friday unless you plan to monitor it.**
+* __Deployment via CI rather than direct deployment__. CircleCI will always deploy `master -> master` and `staging -> staging` if the tests pass, and will also update our dashboard and monitoring services with the release details.
+* __Anything can go into shared staging__. Changes should be pushed one-way from your feature branch. e.g. `git push --force origin feature-branch:staging`. Never run a staging branch locally. Developers also have their own staging servers.
 
 ###Monitoring and alerting
 We use the following services:

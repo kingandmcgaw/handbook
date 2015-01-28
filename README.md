@@ -19,7 +19,6 @@ This is a draft of Easyart's web team's working methodologies. It's a living doc
 * __Each project should have a backog__. These are tasks that need doing, but are unlikely to get done in the next 30 days. By default, new ideas should go into the backlog for prioritisation by project owners.
 * __Ruthlessly remove tasks__ that are unclear, or low priority. Care should be taken to inform everyone it's being removed and why. If they are important they will come back.
 * __Indicate callbacks__. Tasks that are done but need to be reported back on (or need to be reverted in the case of a time-sensitive content change) should have a due date and `:watch:` appended. Example: _Lazy load related images :watch: (Jan 1)_ might indicate the success of the task will be reported back into the ticket on January 1st.
-* __Indicate blockers with question mark icon__. If someone or something is blocking the task from being completed, indicate it with the `:question:` icon. Example: _Decide on lead image for categories page :question:_ might the assignee is waiting for a third party before the image can be chosen.
 * __Tasks must be assigned__. Tasks that are not assigned are extremely unlikely to be actioned.
 * __Always add notes to tasks when decisions are made verbally__. Use Basecamp for meeting notes and documenting agreed sub-actions, no matter how trivial. We will always have distractions, forget what we agreed etc, so these notes are invaluable. Also, some of us will be working remotely, and will need to be kept in the loop. Prefer Basecamp to verbal communication where appropriate. *When things are only said on the phone, in person, in emails that don't include the whole group, or in one-on-one chats, information gets lost, forgotten, or misinterpreted. The problems expand when someone joins or leaves the project.*
 * __Always prefer pasted text to attached files__. Google Docs are also preferable to attachments. Opening files is annoying.
@@ -63,43 +62,19 @@ Covered in more detail in [this post](http://easyart.github.io/2014/02/16/lean-u
 ####Git
 * __Simple git branching__. Master, and your feature branches. Master is always deployable. No exceptions.
 * __Branch naming__. Prefix all branches with your initials. eg. *'JP-my-feature-branch'*
-* __Pull requests for QA__. This is for knowledge sharing and sanity checking rather than "approval". Do so as early as possible. For minor changes and FYIs, [add comments to the lines in Github](https://help.github.com/articles/adding-commit-comments). Comments in the pull request are preferable to Basecamp if the change is in code. Never merge your own pull request. This means you are in charge of chasing someone to give their stamp of approval with a :shipit: message. 
-* __Reviewing your teammates' code needs to be an equal priotity to writing new code__. Momentum is lost when changes await review too long. Kick up a fuss if anyone is blocking your feature from being completed.
+* __Pull requests for QA__. This is for knowledge sharing and sanity checking as much as "approval". Do so as early as possible. For minor changes and FYIs, [add comments to the lines in Github](https://help.github.com/articles/adding-commit-comments). Comments in the pull request are preferable to Basecamp if the change is in code. Never merge your own pull request. This means you are in charge of chasing someone to give their stamp of approval with a :shipit: message. 
+* __Reviewing your teammates' code needs to be an equal priotity to writing new code__. Momentum is lost when changes await review too long. Kick up a fuss if anyone is blocking your feature from being completed. When satisfied, comment on the pull request with the `:shipit:` (:shipit:) emoji, or merge the pull request directly and delete the branch on remote and local. **Don't merge to master after 3pm on a Friday unless you plan to monitor it.**
 * __Deployment via CI rather than direct deployment__. CircleCI will always deploy `master -> master` and `staging -> staging` if the tests pass. 
 * __Anything can go into staging__. Changes should be pushed one-way from your feature branch. e.g. `git push --force origin feature-branch:staging`. Never run a staging branch locally.
-
-####Code reviews (borrowed from [Thoughtbot's guidelines](http://playbook.thoughtbot.com/#code-reviews))
-0. Create a local feature branch based off master.
-0. Submit a GitHub pull request.
-0. Ask for a code review on the request or in Flowdock. Assign the task to them and prepend the task name with `:eyes:` (:eyes:), or move to the QA list
-0. A team member other than the author reviews the pull request. They follow Code Review guidelines to avoid miscommunication.
-0. They make comments and ask questions directly on lines of code in GitHub.
-0. When satisfied, they comment on the pull request with the `:shipit:` (:shipit:) emoji, or merge the pull request directly and delete the remote branch. **Don't merge to master after 3pm on a Friday unless you plan to monitor it.**
-0. Delete your local feature branch once the feature is merged
 
 ###Monitoring and alerting
 We use the following services:
 
 * [New Relic](http://www.newrelic.com) for application monitoring and alerting (and powering our dashboards)
 * [Logentries](www.logentries.com) for logging and some alerting
-* [Airbrake](http://www.airbrake.com) for error monitoring
-* [Pingdom](http://www.pingdom.com) for uptime monitoring
 
 ####In the event of a problem
-
-Each team member will be alerted via the New Relic app when the **errors are > 5%** or the **apdex is < 0.5**, then:
-
-* Log into Flowdock
-* Communicate what you're investigating before you do it ([READ-DO](http://lumbertribe.wordpress.com/2010/02/21/checklist-manifesto/))
-* Things to check:
-    + Status pages
-        0. [Heroku](https://status.heroku.com/)
-        0. [Found](http://status.found.no/)
-        0. [Memcachier](http://status.memcachier.com)
-        0. [Circleci](http://status.circleci.com/)
-    + Loading site in browser
-    + Logs in Logentries
-    + Airbrake
+Each team member will be alerted via the New Relic app when the **errors are > 5%** or the **apdex is < 0.5**, then log into chat and communicate what you're investigating before you do it ([READ-DO](http://lumbertribe.wordpress.com/2010/02/21/checklist-manifesto/)). Check the status pages on key services.
 
 ####References
 * [The Twelve-Factor app](http://12factor.net/)

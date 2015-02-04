@@ -16,7 +16,7 @@ This is a draft of Easyart's web team's working methodologies. It's a living doc
 ####Basecamp
 * __Your _me_ page is your list of _accepted_ tasks__ that can be achieved within a 30 day period. It is your responsibility to make sure these tasks are completed and should be checked daily.
 * __Tasks must be clear, actionable and assigned__ if they are going to stand any chance of getting completed. If a task is assigned to you that is unclear, send it back to the assigner for clarification. If it's too big, request that it be split up. Don't be shy about challenging. Goals and tasks should not be mixed. Confusion is the enemy of productivity and should be confronted.
-* __Each project should have a backog__. These are tasks that need doing, but are unlikely to get done in the next 30 days. By default, new ideas should go into the backlog for prioritisation by project owners.
+* __Each project should have a backlog__. These are tasks that need doing, but are unlikely to get done in the next 30 days. By default, new ideas should go into the backlog for prioritisation by project owners.
 * __Ruthlessly remove tasks__ that are unclear, or low priority. Care should be taken to inform everyone it's being removed and why. If they are important they will come back.
 * __Indicate callbacks__. Tasks that are done but need to be reported back on (or need to be reverted in the case of a time-sensitive content change) should have a due date and `:watch:` appended. Example: _Lazy load related images :watch: (Jan 1)_ might indicate the success of the task will be reported back into the ticket on January 1st.
 * __Always add notes to tasks when decisions are made verbally__. Use Basecamp for meeting notes and documenting agreed sub-actions, no matter how trivial. We will always have distractions, forget what we agreed etc, so these notes are invaluable. Also, some of us will be working remotely, and will need to be kept in the loop. Prefer Basecamp to verbal communication where appropriate. *When things are only said on the phone, in person, in emails that don't include the whole group, or in one-on-one chats, information gets lost, forgotten, or misinterpreted. The problems expand when someone joins or leaves the project.*
@@ -40,7 +40,7 @@ Covered in more detail in [this post](http://easyart.github.io/2014/02/16/lean-u
 * Prefer `function test () {` to `function test() {`. [Because, Crockford](http://www.jslint.com/).
 * Prefer double quotes for strings
 * Note: what documentation style?
-* Note: or is are we using [Google's styleguide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)?
+* Note: or are we using [Google's styleguide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)?
   
 ####Ruby
 [Github's style guide](https://github.com/styleguide/ruby) as a starting point, with some exceptions:
@@ -70,7 +70,7 @@ Covered in more detail in [this post](http://easyart.github.io/2014/02/16/lean-u
 We use the following services:
 
 * [New Relic](http://www.newrelic.com) for application monitoring and alerting (and powering our dashboards)
-* [Logentries](www.logentries.com) for logging and some alerting
+* [Logentries](http://www.logentries.com) for logging and some alerting
 
 ####In the event of a problem
 Each team member will be alerted via the New Relic app when the **errors are > 5%** or the **apdex is < 0.5**, then log into chat and communicate what you're investigating before you do it ([READ-DO](http://lumbertribe.wordpress.com/2010/02/21/checklist-manifesto/)). Check the status pages on key services.

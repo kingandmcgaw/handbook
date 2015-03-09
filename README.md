@@ -1,7 +1,7 @@
-Easyart developer handbook
+King & McGaw developer handbook
 ===========
 
-This is a draft of Easyart's web team's working methodologies. It's a living document, so please make changes via pull request.
+This is a draft of King & McGaw's web team's working methodologies. It's a living document, so please make changes via pull request.
 
 ####General principles
 * __Clarity over cleverness__. Your code is only good if someone else undertands it.
@@ -10,7 +10,7 @@ This is a draft of Easyart's web team's working methodologies. It's a living doc
 * __Focus on value over features__. Ideas and requests are just unproven hypotheses. Test early and often against success criteria. Our job is not programming, [it's delivering value using programming](http://blog.bahadir.io/posts/failed-entrepreneur.html), so we must always ensure we're delivering value.
 * __Transparency by default__. All information should be as public as possible. Use blog posts, Twitter, Basecamp, meetings or whatever is most suitable to disseminate information.
 * __With the exception of team standups, meetings are optional when possible__. But if you attend you must participate.
-* __Agile methodologies, not tools__. Backlogs, standups, QA etc. Related: [Easyart-flavoured agile](http://easyart.github.io/2013/04/16/easyart-flavoured-agile/)
+* __Agile methodologies, not tools__. Backlogs, standups, QA etc. Related: [Easyart-flavoured agile](http://kingandmcgaw.github.io/2013/04/16/easyart-flavoured-agile/)
 * __Continuous delivery over scheduled releases__. Backed up by tests, of course.
 
 ####Basecamp
@@ -27,11 +27,11 @@ This is a draft of Easyart's web team's working methodologies. It's a living doc
 * Agree on outcomes *before* deciding on features
 * Use personas to guide decisions
 * Shared understanding and hypotheses over design heroes
-* Use the [styleguide](http://www.easyart.com/docs/styleguide) to build pages from modules
+* Use the [styleguide](http://www.kingandmcgaw.com/docs/styleguide) to build pages from modules
 * Start with the lowest fidelity way of describing an idea, and validate as early as possible
 * Usertesting.com for user testing, and Optimizely for split testing
 
-Covered in more detail in [this post](http://easyart.github.io/2014/02/16/lean-ux-at-easyart/).
+Covered in more detail in [this post](http://kingandmcgaw.github.io/2014/02/16/lean-ux-at-easyart/).
 
 ###Language style guides
   
@@ -48,8 +48,46 @@ Covered in more detail in [this post](http://easyart.github.io/2014/02/16/lean-u
 * Note: what documentation style?
   
 ####CSS
-* Sass style guide
-* [Craven gem](https://github.com/easyart/craven)
+* Write CSS using the SCSS syntax
+* There is a .scss-lint file in the root of the repo which dictates the rules. Each definition is outlined in the [scss-lint Linters Docs](https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md).
+* We are in the process of applying these rules, follow them going forward and we will gradually transition legacy code.
+* We currently depend on bourbon and neat (so all of their mixins are available to use).
+* Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.
+* Include one space before the opening brace of declaration blocks for legibility.
+* Place closing braces of declaration blocks on a new line.
+* Include one space after : for each declaration.
+* Each declaration should appear on its own line for more accurate error reporting.
+* End all declarations with a semi-colon. The last declaration's is optional, but your code is more error prone without it.
+* Comma-separated property values should include a space after each comma (e.g., box-shadow).
+* Don't include spaces after commas within rgb(), rgba(), hsl(), hsla(), or rect() values. This helps differentiate multiple color values (comma, no space) from multiple property values (comma with space).
+* Don't prefix property values or color parameters with a leading zero (e.g., .5 instead of 0.5 and -.5px instead of -0.5px).
+* Lowercase all hex values, e.g., #fff. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.
+* Use shorthand hex values where available, e.g., #fff instead of #ffffff.
+* Quote attribute values in selectors, e.g., input[type="text"]. They’re only optional in some cases, and it’s a good practice for consistency.
+* Avoid specifying units for zero values, e.g., margin: 0; instead of margin: 0px;.
+
+**Bad**
+``` css
+.selector, .selector-secondary, .selector[type=text] {
+  padding:15px;
+  margin:0px 0px 15px;
+  background-color:rgba(0, 0, 0, 0.5);
+  box-shadow:0px 1px 2px #CCC,inset 0 1px 0 #FFFFFF
+}
+```
+
+**Good**
+
+``` css
+.selector,
+.selector-secondary,
+.selector[type="text"] {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: rgba(0,0,0,.5);
+  box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
+}
+```
 
 ####File naming rules
 * **Always** lowercase
